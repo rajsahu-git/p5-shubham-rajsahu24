@@ -1,3 +1,5 @@
+#Exercise1.1:
+
 when we enter URL(Uniform Resource Locator) browser checks cache for DNS(Domain Name System) entry find the correspondind ip address of website.
 It looks for following cache - 1.Browser Cache 2.Operating Systems Cache 3.Router Cache 4.ISP cache
 If browser not found in cache, then ISP(Internet Service Provider) DNS server initiates a DNS query to find ip address of server that hots the domain name.

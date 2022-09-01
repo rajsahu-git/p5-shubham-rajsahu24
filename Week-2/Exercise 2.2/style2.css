@@ -1,0 +1,114 @@
+#perent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.cubes{
+    display: flex;
+    position: absolute;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red
+}
+
+#yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow
+}
+#red{
+    animation-name: reverse;
+    animation-duration: 2s;
+}
+@keyframes bl-90 {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 100%;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        transform-origin: 0 100%;
+    }
+}
+
+@keyframes tl-90 {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 100%;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        transform-origin: 0 100%;
+    }
+}
+
+@keyframes tr-90 {
+    0% {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+    }
+}
+
+@keyframes br-90 {
+    0% {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+    }
+}
+
+.cubes:hover #red{
+    animation: bl-90 2s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.cubes:hover #blue {
+    animation: tr-90 2s 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+.cubes:hover #green {
+    animation: tl-90 2s 1;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+}
+.cubes:hover #yellow {
+    animation: br-90 2s 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out-in;
+}
